@@ -1,0 +1,287 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: darkgreen;
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    overflow-y: auto;
+    background-image: url('https://uhdwallpapers.org/uploads/converted/20/05/28/porsche-911-turbo-s-1920x1080_785794-mm-90.jpg');
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    height: 50px;
+    padding: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu img {
+    margin-left: auto;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    margin: 30px;
+    background-color: #333;
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.blaa{
+    color: white;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-text {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #333;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.image-container:hover img {
+    opacity: 0.7;
+}
+
+.image-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.image-container a:hover {
+    text-decoration: underline;
+}
+
+.order-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.order {
+    width: 300px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.checkout-btn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.checkout-btn:hover {
+    background-color: #d13025;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    color: #333;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-container {
+        padding: 10px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+  }
+
+  .skit {
+    display: flex;
+    align-items: center;
+  }
+  
+  .side, .side2, .side3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    background-color: #333;
+    border-radius: 15px;
+  }
+  .side h3, .side2 h3, .side3 h3 {
+    margin-bottom: 20px;
+    color: white;
+    width: 100%;
+  }
+  .side img, .side2 img, .side3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 200px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .side img {
+      max-width: 100%;
+    }
+  }/*# sourceMappingURL=style.css.map */
+  @keyframes iframeAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .iframsak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .iframsak iframe {
+    width: 600px;
+    height: 400px;
+    border: 0;
+    animation: iframeAnimation 2s ease-in-out infinite;
+  }/*# sourceMappingURL=style.css.map */
